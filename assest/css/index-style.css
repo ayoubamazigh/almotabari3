@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    font-size: 1.1rem;
+    font-family: 'Tajawal', sans-serif;
+        box-sizing: border-box;
+}
+
+body, html{
+    background-color: white;
+    scroll-snap-type: y mandatory;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation{
+    width: 100vw;
+    height: 9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.navigation-logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.logoimage{
+    height: 6rem;
+
+}
+
+.nav-elements{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-elements li a{
+    padding: 1rem;
+    text-decoration: none;
+    color: rgb(55, 2, 85);
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.nav-elements li a:hover{
+    color: rgb(137, 0, 250);
+    transition: .4s;
+    font-size: 1.7rem;
+}
+
+.darkmode img {
+    height: 3rem;
+    border-radius: px;
+
+}
+
+.body-image img{
+    margin-top: -1rem;
+    margin-left: 20%;
+    height: 80vh;
+}
+
+.body-description{
+    padding: 4rem;
+    font-size: 3rem;
+
+}
+
+
+.body-p{
+    margin: .5rem 0rem 2rem 10%;
+    font-size: 1.3rem;;
+}
+.btn-give{
+    margin: 2rem 3rem;
+    padding: .5rem 1rem 1rem 1rem ;
+    background-color: rgb(0, 255, 21);
+    font-size: 2rem;
+    font-weight: 400;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px lightgray;
+}
+.btn-find{
+    margin: 2rem 3rem;
+    padding: .5rem 1rem 1rem 1rem ;
+    background-color: cyan;
+    font-size: 2rem;
+    font-weight: 400;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px lightgray;
+}
+.btn-find:hover{
+    background-color: black;
+    transform: scale(1.1);
+    transition: .5s;
+    color: white;
+    font-size: 2.1rem;
+}
+
+.btn-give:hover{
+    background-color: black;
+    transform: scale(1.1);
+    transition: .5s;
+    color: white;
+    font-size: 2.1rem;
+}
+.gri-start{
+    background-image: linear-gradient(to top left,rgb(229, 232, 235), lightgray);
+}
+
+.section{
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+.gri-start{
+
+}
+
+.second-one{
+    background-color: blue;
+}
+
