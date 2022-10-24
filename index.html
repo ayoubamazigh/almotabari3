@@ -1,77 +1,155 @@
 <!DOCTYPE HTML>
-<html lang='ar' >
-    <head>
+<html lang='ar'>
 
-        <title>Almotabari3.com</title>
-        <meta charset='utf-8' >
-        <link rel='icon' href='assest/_images/logo-donation.png'  >
-        <link rel='stylesheet' href='assest/css/navigation-style.css'  type='text/css'>
-        <link rel='stylesheet' href='assest/css/footer-style.css'  type='text/css'>
-        <link rel='stylesheet' href='assest/css/index-style.css' type='text/css' >
-        <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;400;700&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div class="container">
-            <div class="section  gri-start">
-                <nav class='navigation' >
-                    <div class="darkmode">
-                        <img src="assest/_images/darkmode.png" />
-                    </div>
-                    <ul class="nav-elements">
-                        <li>
-                           <a href="#" >عملية التبرع</a> 
-                        </li>
-                        <li>
-                            <a href="#" >التواصل</a> 
-                         </li>
-                         <li>
-                            <a href="#" >
-                                التطبيق</a> 
-                         </li>
-                         <li>
-                            <a href="#" >الشركاء</a> 
-                         </li>
-                         <li>
-                            <a href="#" >الصفحة الرئيسية</a> 
-                         </li>
-                    </ul>
-                    
-                    <div class='navigation-logo' >
-                        منصة المتبرع
-                        <img class="logoimage" src='assest/_images/logo-donation.png' >  
-                    </div>
-                </nav>
-                <div class="flex">
-                    <div class="body-image">
-                        <img src="assest/_images/body-image.png" />
-                    </div>
-                    <div class="body-description">
-                        منصة المتبرع
-                        <p class="body-p" >
-                            وتين هي مبادرة بالتعاون مع وزارة الصحة تسعى إلى تقليص فجوة التواصل بين المتبرعين وبنوك الدم حتى تصبح عملية التبرع بالدم أسهل.
-                            وتين هي مبادرة بالتعاون مع وزارة الصحة تسعى إلى تقليص فجوة التواصل بين المتبرعين وبنوك الدم حتى تصبح عملية التبرع بالدم أسهل.
-                        </p>
-                        <a class='btn-find' > البحت عن متبرع </a>
-                        <a class='btn-give' > تبرع الأن </a>
-                        </div>
+<head>
+
+    <title>Almotabari3.com</title>
+    <meta charset='utf-8' />
+    <meta name="viewport"  content="width=device-width initial-scale=1000px"/>
+    <link rel='icon' href='assest/_images/logo-donation.png'>
+    <link rel='stylesheet' href='assest/css/navigation-style.css' type='text/css'>
+    <link rel='stylesheet' href='assest/css/footer-style.css' type='text/css'>
+    <link rel='stylesheet' href='assest/css/index-style.css' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="section  gri-start">
+            <nav class='navigation' id="navigationx">
+                <div class="darkmode" onclick="darkmode();">
+                    <image id="darkmodeimage" src="assest/_images/darkmode.png"></image>
                 </div>
+                <ul class="nav-elements">
+                    <li>
+                        <a href="#">عملية التبرع</a>
+                    </li>
+                    <li>
+                        <a href="#">التواصل</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            التطبيق</a>
+                    </li>
+                    <li>
+                        <a href="#">الشركاء</a>
+                    </li>
+                    <li>
+                        <a href="#">الصفحة الرئيسية</a>
+                    </li>
+                </ul>
 
-
-            </div>
-            <div class="section second-one ">
-                <div class="footer">
-                    random text
-                    <p>
-                        نرحب بجميع الأفراد والجهات المهتمة بدعم مبادرة وتين، تعاونكم يمكّننا من التقدم نحو بناء مجتمع معطاء.
+                <div class='navigation-logo'>
+                    منصة المتبرع
+                    <image id="darkmodeimage2" class="logoimage" src='assest/_images/logo-donation.png'></image>
+                </div>
+            </nav>
+            <div class="flex">
+                <div class="body-image">
+                    <image id="darkmodeimage1" src="assest/_images/body-image.png"></image>
+                </div>
+                <div class="body-description">
+                    منصة المتبرع
+                    <p class="body-p">
+                        وتين هي مبادرة بالتعاون مع وزارة الصحة تسعى إلى تقليص فجوة التواصل بين المتبرعين وبنوك الدم حتى
+                        تصبح عملية التبرع بالدم أسهل.
+                        وتين هي مبادرة بالتعاون مع وزارة الصحة تسعى إلى تقليص فجوة التواصل بين المتبرعين وبنوك الدم حتى
+                        تصبح عملية التبرع بالدم أسهل.
                     </p>
-
+                    <a href="#" class='btn-find'> البحت عن متبرع </a>
+                    <a href="#" class='btn-give'> التسجيل كمتبرع </a>
+                    
                 </div>
-
             </div>
-
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="aliceblue" fill-opacity="1" d="M0,96L80,133.3C160,171,320,245,480,240C640,235,800,149,960,133.3C1120,117,1280,171,1360,197.3L1440,224L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+                
         </div>
 
+        <div class="section ">
+            
+            <div class="best">
+                <div class="best-text">
+                    <div class="best-title">
+                        خصائص ومميزات المنصة
+                    </div>
+                    <div class="best-description">
+                        الربط (التكامل) بمركز المعلومات الوطني
+                        وصول المتطوعين للفرص التطوعية بكل يسر وسهولة
+                        الحصول على إشعارات عن الفرص التطوعية وفق اهتمامات المتطوع
+                        رصد وتوثيق الساعات التطوعية
+                        توفير فرص تطوعية تخصصية ذات أثر اجتماعي واقتصادي
+                    </div>
+                </div>
+                <div class="best-image">
+                    <image src="assest/_images/logo-donation.png" ></image>
+                </div>
+
+            </div>
+            
+        </div>
+        <div class="section gri-end">
+            <div class="good">
+                <div class="good-title">
+                    الفوائد المؤكدة للتبرع بالدم
+                </div>
+                <div class="good-container">
+                    <div class="good-element">
+                        <div class="good-image">
+                            <img src="assest/_images/body-image.png" >
+                        </div>
+                        <div class="good-element-title">
+                            زيادة نشاط الدورة
+                        </div>
+                        <div class="good-element-description">
+                            التبرع بالدم يساعد علي تقليل نسبة الحديد في الدم لأنه يعتبر أحد أسباب الإصابة بأمراض  القلب وانسداد الشرايين. 
+                        </div>
+                    </div>
+                    <div class="good-element">
+                        <div class="good-image">
+                            <img src="assest/_images/body-image.png" >
+                        </div>
+                        <div class="good-element-title">
+                            زيادة نشاط الدورة
+                        </div>
+                        <div class="good-element-description">
+                            التبرع بالدم يساعد علي تقليل نسبة الحديد في الدم لأنه يعتبر أحد أسباب الإصابة بأمراض  القلب وانسداد الشرايين. 
+                        </div>
+                    </div>
+                    <div class="good-element">
+                        <div class="good-image">
+                            <img src="assest/_images/body-image.png" >
+                        </div>
+                        <div class="good-element-title">
+                            زيادة نشاط الدورة
+                        </div>
+                        <div class="good-element-description">
+                            التبرع بالدم يساعد علي تقليل نسبة الحديد في الدم لأنه يعتبر أحد أسباب الإصابة بأمراض  القلب وانسداد الشرايين. 
+                        </div>
+                    </div>
+                    <div class="good-element">
+                        <div class="good-image">
+                            <img src="assest/_images/body-image.png" >
+                        </div>
+                        <div class="good-element-title">
+                            زيادة نشاط الدورة
+                        </div>
+                        <div class="good-element-description">
+                            التبرع بالدم يساعد علي تقليل نسبة الحديد في الدم لأنه يعتبر أحد أسباب الإصابة بأمراض  القلب وانسداد الشرايين. 
+                        </div>
+                    </div>
+                    
+                </div>
+                <svg class="svg-good" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="aliceblue" fill-opacity="1" d="M0,64L0,128L360,128L360,224L720,224L720,160L1080,160L1080,256L1440,256L1440,320L1080,320L1080,320L720,320L720,320L360,320L360,320L0,320L0,320Z"></path></svg>
 
 
-    </body>
+            </div>
+        </div>
+        
+
+    </div>
+
+
+    <script src="assest/scripts/javascript/dark-mode.js"></script>
+</body>
+
 </html>
