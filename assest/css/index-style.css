@@ -36,6 +36,10 @@ html {
     align-items: center;
 }
 
+.first-section{
+    background-color: aliceblue;
+}
+
 .navigation {
     width: 100%;
     height: 9rem;
@@ -64,6 +68,7 @@ html {
     align-items: center;
     list-style: none;
 }
+
 
 .nav-elements li a {
     padding: 1rem;
@@ -115,9 +120,9 @@ html {
 
 
 .body-p {
-    margin: .5rem 0rem 2rem 10%;
+    margin: 1rem 0rem 2rem 10%;
     font-size: 1.3rem;
-    ;
+    text-align: right;
 }
 
 .btn-give {
@@ -158,9 +163,7 @@ html {
     font-size: 2.03rem;
 }
 
-.gri-start {
-    background-image: linear-gradient(to top left, aliceblue 80%, lightgray);
-}
+
 
 .section {
     height: 100vh;
@@ -168,69 +171,94 @@ html {
 
 }
 
-.best {
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-image: linear-gradient(to bottom left, white, white, white, lightgray);
+
+.tirth-section{
+    background-color: aliceblue;
+    position: relative;
 }
 
-.best-text {
-    margin: 3rem 5rem 3rem 5rem;
-    width: 40%;
+.need-title{
+    padding: 4rem 2rem 1rem 0rem;
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(72, 0, 139);
 }
 
-.best-title {
-    color: rgb(84, 0, 117);
-    text-align: right;
-    font-size: 4rem;
-    font-weight: 600;
+.tirth-section p{
+ color: rgb(111, 63, 126);
+    padding: 0rem 2rem;
+    float: right;
+    font-size: 2rem;
+    width: 75%;
+}
+
+.need-ul{
+    padding: 1rem 6rem;
+    width: 75vw;
+    float: right;
+    line-height: 3rem;
 
 }
 
-.best-description {
-    padding: 1rem 2rem;
-    margin: 1rem 0rem;
+.need-li{
     font-size: 1.5rem;
-    line-height: 8vh;
-    font-weight: 600;
+    color: rgb(78, 80, 82)
+    
+}
+
+
+.need-image img{
+    height: 45rem;
+    padding: 2rem 2rem;
+    position: absolute;
+    bottom: -2rem;
+    left: -3rem;
+    
+}
+
+
+.tri-wave{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+left: 0;
+}
+
+
+
+.fourt-section{
+    background-image: linear-gradient(to bottom ,white, aliceblue);
 }
 
 
 
 
-.best-image img {
-    height: 80vh;
-
+.second-section{
+    background-image: linear-gradient(to bottom ,white,white,  aliceblue);
 }
 
-.gri-end {
-    background-image: linear-gradient(to top left, white, white, white, lightgray);
-
-}
 
 .good-image {
     text-align: center;
 }
 
 .good-image img {
-    height: 7rem;
-    width: 7rem;
+    height: 6rem;
+    width: 6rem;
 
 }
 
 .good {
 
-    height: 100hv;
+    height: 100%;
 }
 
 .good-title {
-    padding: 6rem 2rem 0rem 2rem;
+    padding: 2rem 2rem 0rem 2rem;
     text-align: center;
-    font-size: 4rem;
-    font-weight: 600;
+    font-size: 3rem;
+    font-weight: 800;
     color: rgb(64, 6, 112);
 }
 
@@ -241,7 +269,7 @@ html {
 }
 
 .good-element {
-    margin-top: 6rem;
+    margin-top: 3rem;
     padding: 0rem 4rem;
 }
 
@@ -250,11 +278,12 @@ html {
 .good-element-title {
     text-align: center;
     font-weight: 700;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: rgb(4, 8, 139);
 }
 
 .good-element-description {
+    font-size: 1rem;
     margin-top: .5rem;
     text-align: center;
     color: gray;
@@ -263,36 +292,97 @@ html {
 }
 
 .svg-good {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.map-title{
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(69, 31, 100);
+    text-align: center;
+}
+
+.maps{
+    margin: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
 }
 
-.grid-center {
-    background-color: aliceblue;
+.maps-des{
+    background-color: blue;
 }
 
-.center {
-    background-color: aliceblue;
+.map {
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px lightgray;
 }
 
-.center {
-    padding-top: 2rem;
+.highter{
+    height: 80vh;
+}
+
+
+.footer{
     position: relative;
-    text-align: center;
-    font-size: 4rem;
-    font-weight: 600;
-    color: rgb(66, 2, 92);
+    height: 20vh;
+    background-color: lightcyan
 }
 
-.center-map {
+.separator{
+    width: 100%;
+    height: .5rem;
+    background-color: darkred;
+}
+
+.footer-items{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(24, 1, 54);
+}
+
+.iner-footer-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-des{
+    color: white;
     padding: 1rem;
-    text-align: center;
+    width: 40%;
+    font-weight: 400;
 }
 
-.center-map iframe {
-    margin: 1rem auto 1rem auto;
-    width: 90%;
-    height: 70vh;
-    border-radius: 4px ;
-    border: 1px solid black;
-    box-shadow: 3px 3px 10px gray;
+.iner-footer-item div{
+    color: rgb(219, 210, 210);
+    padding: 1rem;
+    font-weight: 400;
+}
+
+.copyright div {
+    color: rgb(209, 197, 197);
+} 
+
+.copyright div a{
+    color: rgb(255, 255, 255);
+} 
+
+.copyright{
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    background-color: rgb(2, 56, 87);
+    font-weight: 400;
+    height: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
