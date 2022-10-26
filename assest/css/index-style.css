@@ -10,10 +10,19 @@
     color: black;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body,
 html {
     background-color: white;
     scroll-snap-type: y mandatory;
+}
+
+body{
+    height: 100vh;
+    overflow: 0;
 }
 
 .container {
@@ -229,6 +238,7 @@ left: 0;
 
 .fourt-section{
     background-image: linear-gradient(to bottom ,white, aliceblue);
+    
 }
 
 
@@ -310,79 +320,83 @@ left: 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
-
 }
 
 .maps-des{
+    height:70vh;
+    width: 40vw;
     background-color: blue;
 }
 
-.map {
+.map iframe{
+    width: 60vw;
+    height: 70vh;
     border: 1px solid rgb(190, 190, 190);
     border-radius: 5px;
     box-shadow: 3px 3px 10px lightgray;
 }
 
-.highter{
-    height: 80vh;
-}
-
-
-.footer{
-    position: relative;
-    height: 20vh;
-    background-color: lightcyan
-}
-
-.separator{
-    width: 100%;
-    height: .5rem;
-    background-color: darkred;
-}
-
-.footer-items{
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(24, 1, 54);
-}
-
-.iner-footer-item{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer-des{
-    color: white;
-    padding: 1rem;
-    width: 40%;
-    font-weight: 400;
-}
-
-.iner-footer-item div{
-    color: rgb(219, 210, 210);
-    padding: 1rem;
-    font-weight: 400;
-}
-
-.copyright div {
-    color: rgb(209, 197, 197);
-} 
-
-.copyright div a{
-    color: rgb(255, 255, 255);
-} 
-
-.copyright{
-    width: 100%;
+.back-to-top{
+    display: none;
+    margin: 2rem;
     bottom: 0;
+    right: 0;
+    position: fixed;
+    cursor: pointer;
+}
+.back-to-top:hover{
+    transition: .4s;
+    transform: scale(1.1);
+}
+
+.back-to-top img{
+    width: 3.5rem;
+
+}
+
+.preloader-gif {
     position: absolute;
-    background-color: rgb(2, 56, 87);
-    font-weight: 400;
-    height: 2rem;
+    top: 0;
+    left: 0;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100%;
+    z-index: 100;
+    background-color: aliceblue;
+}
+
+.preloader-gif div{
+    height: 20%;
+    border: 3px solid black;
+    height: 3rem;
+    width: 3rem;
+    animation-name: preloading;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-direction: reverse;
+    border-left-color: transparent;
+    border-radius: 50%;
+    animation-timing-function: ease-in;
+    z-index: 100;
+
+}
+
+
+@keyframes preloading {
+    0%{
+        transform: rotate(360deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+        animation-duration: 1s;  
+    }
+}
+
+
+::-webkit-scrollbar{ 
+    width: 0%;
 }
