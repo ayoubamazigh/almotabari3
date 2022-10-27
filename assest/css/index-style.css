@@ -1,13 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@300;400;500;700&display=swap');
 * {
     margin: 0;
     padding: 0;
     text-align: right;
     font-size: 1.1rem;
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Changa', sans-serif ;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    color: black;
+    color: rgb(54, 54, 54);
 }
 
 html{
@@ -63,11 +64,11 @@ body{
     justify-content: space-between;
     align-items: center;
     font-size: 3rem;
-    font-weight: 800;
+    font-weight: 500;
 }
 
 .logoimage {
-    height: 6rem;
+    height: 7rem;
 
 }
 
@@ -82,9 +83,9 @@ body{
 .nav-elements li a {
     padding: 1rem;
     text-decoration: none;
-    color: rgb(55, 2, 85);
+    color: rgb(20, 2, 85);
     font-size: 1.2rem;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .nav-elements li a:hover {
@@ -189,15 +190,15 @@ body{
 .need-title{
     padding: 4rem 2rem 1rem 0rem;
     font-size: 3rem;
-    font-weight: bold;
-    color: rgb(72, 0, 139);
+    font-weight: 500;
+    color: rgb(58, 2, 110);
 }
 
 .tirth-section p{
  color: rgb(111, 63, 126);
     padding: 0rem 2rem;
     float: right;
-    font-size: 2rem;
+    font-size: 1.6rem;
     width: 75%;
 }
 
@@ -206,23 +207,24 @@ body{
     width: 75vw;
     float: right;
     line-height: 3rem;
+    z-index: 100;
 
 }
 
 .need-li{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: rgb(78, 80, 82)
     
 }
 
 
 .need-image img{
-    height: 45rem;
+    height: 40rem;
     padding: 2rem 2rem;
     position: absolute;
     bottom: -2rem;
     left: -3rem;
-    
+    z-index: 100;
 }
 
 
@@ -232,12 +234,13 @@ body{
     position: absolute;
     bottom: 0;
 left: 0;
+z-index: 98;
 }
 
 
 
 .fourt-section{
-    background-image: linear-gradient(to bottom ,white, aliceblue);
+    background-image: linear-gradient(to bottom ,white, aliceblue );
     
 }
 
@@ -268,7 +271,7 @@ left: 0;
     padding: 2rem 2rem 0rem 2rem;
     text-align: center;
     font-size: 3rem;
-    font-weight: 800;
+    font-weight: 500;
     color: rgb(64, 6, 112);
 }
 
@@ -287,7 +290,7 @@ left: 0;
 
 .good-element-title {
     text-align: center;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 1.2rem;
     color: rgb(4, 8, 139);
 }
@@ -296,8 +299,8 @@ left: 0;
     font-size: 1rem;
     margin-top: .5rem;
     text-align: center;
-    color: gray;
-    font-weight: 600;
+    color: rgba(0, 4, 7, 0.74);
+    font-weight: 400;
 
 }
 
@@ -310,7 +313,7 @@ left: 0;
 .map-title{
     padding: 2rem;
     font-size: 3rem;
-    font-weight: bold;
+    font-weight: 500;
     color: rgb(69, 31, 100);
     text-align: center;
 }
@@ -343,6 +346,7 @@ left: 0;
     right: 0;
     position: fixed;
     cursor: pointer;
+    z-index: 100;
 }
 .back-to-top:hover{
     transition: .4s;
@@ -354,49 +358,83 @@ left: 0;
 
 }
 
-.preloader-gif {
-    position: absolute;
-    top: 0;
-    left: 0;
+.preloader-gif{
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100vw;
     height: 100%;
     z-index: 100;
-    background-color: aliceblue;
+    background-color: white;
 }
 
-.preloader-gif div{
-    height: 20%;
-    border: 3px solid black;
-    height: 3rem;
-    width: 3rem;
-    animation-name: preloading;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-direction: reverse;
-    border-left-color: transparent;
-    border-radius: 50%;
-    animation-timing-function: ease-in;
-    z-index: 100;
+.styler{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
 
+.progress{
+    position: absolute;
+    height: 5rem;
+    width:5rem;
+    background-color: red;
+}
+
+.progress div {
+    position: absolute;
+    height: 0%;
+    width: 100%;
+    background-color: white;
+    animation-name: color;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    z-index: 99;
+    
+}
+
+.gif{
+    position: absolute;
+    height: 10rem;
+    width: 10rem;
+    background-image: url(../_images/loader-heart.png);
+    background-size: cover;
+    z-index: 100;
+}
+
+
+
+@keyframes color {
+    from{
+        height: 100%;
+    }
+    to{
+        height: 1%;
+    }
 }
 
 
 @keyframes preloading {
     0%{
-        transform: rotate(360deg);
+        transform: rotate(0deg);
     }
 
     100%{
-        transform: rotate(0deg);
-        animation-duration: 1s;  
+        transform: rotate(360deg);
+          
     }
 }
 
 
 ::-webkit-scrollbar{ 
-    width: 0%;
+   
+}
+
+
+.fith-section{
+    background-color: aliceblue;
 }
