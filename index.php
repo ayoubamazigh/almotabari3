@@ -1,3 +1,14 @@
+<?php
+
+    include "viewer/loaddata.php";
+
+
+
+
+
+
+?>
+
 <!DOCTYPE HTML>
 <html lang='ar'>
 
@@ -11,6 +22,7 @@
 
 <body>
 
+    
     <div id="preload" class="preloader-gif">
         <div class="big">
         </div>
@@ -18,6 +30,8 @@
 
         </div>
     </div>
+
+  
 
     <div class="container">
         <div class="section first-section">
@@ -474,13 +488,9 @@
                             فصيلة الدم 
                         </div>
                         <select>
-                            <option id="" >المرجو إختيار  فصيلة دمك</option>
-                            <option id="" >المرجو إختيار  فصيلة دمك</option>
-                            <option id="" >المرجو إختيار  فصيلة دمك</option>
-                            <option id="" >المرجو إختيار  فصيلة دمك</option>
-                            <option id="" >المرجو إختيار  فصيلة دمك</option>
-                            <option id="" >المرجو إختيار  فصيلة دمك</option>
-                            <option id="" >المرجو إختيار  فصيلة دمك</option>
+                            <option>sfjklsjfkl</option>                       
+
+
                         </select> 
                     </div>
                     <div class="rigister-col rr">
@@ -548,7 +558,7 @@
     <div onclick="gototop()" id="backtotop" class="back-to-top">
         <img src="assest/_images/back-to-top.png ">
     </div>
-  
+    
     <script src="assest/scripts/javascript/preloader.js"></script>
     <script src="assest/scripts/javascript/dark-mode.js"></script>
     <script src="assest/scripts/javascript/back-to-top.js"></script>
