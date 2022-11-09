@@ -1,9 +1,38 @@
 <?php
+    include  "assest/scripts/php/connection.php";
+    include  "model/Blood_Type.php";
+    include  "model/City.php";
 
-    include "viewer/loaddata.php";
+    $cn = new Connection();
+    $blood_type_array = null;
+    $counter = 0;
+    $query = "SELECT * FROM blood_type;";
+            
+    $result = mysqli_query($cn->getConnection(), $query);
+            
+    while ($row = mysqli_fetch_array($result)){
+        $Bloodtype = new Blood_type($row[0],$row[1]);
+        $blood_type_array[$counter] = $Bloodtype;
+        $counter++;
+    }
 
 
 
+    $city_array = null;
+    $counter = 0;
+    $query = "SELECT * FROM city ORDER BY City;";
+            
+    $result = mysqli_query($cn->getConnection(), $query);
+            
+    print_r($result);
+
+    while ($row = mysqli_fetch_array($result)){
+        $city = new City($row[0],$row[1]);
+        $city_array[$counter] = $city;
+        $counter++;
+    }
+
+    
 
 
 
@@ -488,7 +517,17 @@
                             فصيلة الدم 
                         </div>
                         <select>
-                            <option>sfjklsjfkl</option>                       
+                            <option></option>
+                            <?php
+
+                                foreach ($blood_type_array as $blood_type) {
+                                    $b_id = $blood_type->getIdentification();
+                                    $b_name = $blood_type->getBlood_type() . " فصيلة الدم ";
+                                    echo "<option value='$b_id'>$b_name</option>";
+
+                                }
+                            
+                            ?>                      
 
 
                         </select> 
@@ -522,13 +561,26 @@
                             :المدينة
                         </div>
                         <select>
-                            <option id="" >المرجو إختيار  فصيلة دمك</option>
-                            <option id="" >المرجو إختيار  فصيلة دمك</option>
-                            <option id="" >المرجو إختيار  فصيلة دمك</option>
-                            <option id="" >المرجو إختيار  فصيلة دمك</option>
-                            <option id="" >المرجو إختيار  فصيلة دمك</option>
-                            <option id="" >المرجو إختيار  فصيلة دمك</option>
-                            <option id="" >المرجو إختيار  فصيلة دمك</option>
+                            
+                            <option></option>
+                            <?php
+
+                                foreach ($city_array as $cityo ) {
+                                    $city_c = $cityo->getCity();
+                                    echo "<option>$city_c</option>";
+
+                                }
+
+                            /*
+                                foreach ($city_array as $city) {
+                                    $c_id = $city->getIdentification();
+                                    $c_name = $city->getCity()();
+                                    echo "<option value='$c_id' >$c_name</option>";
+
+                                }
+                                
+                                */
+                            ?>
                             
                         </select>  
                     </div>
