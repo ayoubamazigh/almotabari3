@@ -1,9 +1,6 @@
-
-
 if (window.localStorage.getItem('dark')){
-            
-    if(window.localStorage.getItem('dark') == 1 ){
-        
+    if(window.localStorage.getItem('dark') == '1' ){
+
         const h = document.querySelector('body')
         const b1 = document.getElementById('darkmodeimage1')
         const b2 = document.getElementById('darkmodeimage2')

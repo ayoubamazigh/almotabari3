@@ -1,25 +1,82 @@
 <?php
-    
+    include '../assest/scripts/php/connection.php';
+
+
     Class Donor{
         private $identification;
         private $fist_name;
         private $last_name;
-        private $Date_birth;
         private $phone;
-        private $Email;
         private $Blood_type;
         private $city;
+        private $cn_donor;
 
-        public Function __construct($identificationc, $fist_namec,  $last_namec, $Date_birthc, $phonec, $Emailc,$Blood_typec,$city){
+        public Function __construct($identificationc, $fist_namec,  $last_namec, $phonec, $Blood_typec,$city){
             $this -> identification = $identificationc;
-            $this -> first_name = $identificationc;
-            $this -> last_name = $identificationc;
-            $this -> date_birth = $identificationc;
-            $this -> phone = $identificationc;
-            $this -> email = $identificationc;
-            $this -> Blood_type = $identificationc;
-            $this -> city = $identificationc;
+            $this -> fist_name = $fist_namec;
+            $this -> last_name = $last_namec;
+            $this -> phone = $phonec;
+            $this -> Blood_type = $Blood_typec;
+            $this -> city = $city;
+            $cn = new Connection();
+
+            $this -> cn_donor = $cn-> getConnection();
+
+
         }
+
+        public function checkdonor(){
+
+                $id = $this->getIdentification();
+        
+                $query = "select count(*) from DONOR where Identification = '$id';";
+                $result = mysqli_query($this->cn_donor, $query);
+                $num =  mysqli_fetch_array($result);
+
+                if ($num[0] == 1){
+                        return true;
+                }else{
+                        return false;
+                }
+        }
+
+
+
+        public function adddonor(){
+
+                $id = $this->getIdentification();
+                $fn = $this->getFist_name();
+                $ln = $this->getLast_name();
+                $pn = $this->getPhone();
+                $bl = $this->getBlood_type();
+                $ct = $this->getCity();
+
+                $query = "INSERT INTO DONOR VALUES ('$id','$fn','$ln','$pn',$bl,$ct)";
+
+                $result = mysqli_query($this->cn_donor, $query);
+
+                if ($result == 1){
+                        return true;
+                }else{
+                        return false;
+                }
+                
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         // Geters

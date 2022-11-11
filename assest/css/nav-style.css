@@ -1,0 +1,205 @@
+.navigation {
+    width: 100%;
+    height: 9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.ham{
+    display: none;
+    height: 3rem;
+    width: 3rem;
+}
+
+.slice{
+    margin: .2rem;
+    height: .8rem;
+    width: 3rem;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.close-nav{
+    margin: .5rem;
+    font-weight: 500;
+    color: RED;
+    display: none;
+    cursor: pointer;
+}
+
+.navigation-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.logoimage {
+    height: 7rem;
+}
+
+.nav-elements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+
+.nav-elements li a {
+    padding: 1rem;
+    text-decoration: none;
+    color: rgb(20, 2, 85);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.nav-elements li a:hover {
+    color: rgb(137, 0, 250);
+    transition: .3s;
+    transform: scale(2);
+}
+
+.nav-elements li:hover {
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+
+
+.darkmode img {
+    margin-right: 4rem;
+    border: 3px solid black;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.darkmode:hover {
+    transform: scale(1.02);
+    filter: invert(0.5);
+    transition: .4s;
+}
+
+@media(max-width: 1370px) {
+    .navigation-logo {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    .logoimage {
+        height: 5rem;
+    }
+    .nav-elements li a {
+        padding: 1rem;
+        text-decoration: none;
+        color: rgb(20, 2, 85);
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+    .darkmode img {
+        border: 3px solid black;
+        height: 2.5rem;
+        border-radius: 50%;
+    }
+}
+
+@media(max-width: 1200px) {
+    .nav-elements li a {
+        padding: .5rem;
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 1050px) {
+    .navigation {
+        position: relative;
+    }
+    .ham{
+        display: block;
+    }
+    .nav-elements {
+        padding: 1rem 1rem 0rem 1rem ;
+        position:absolute;
+        top: 5rem;
+        right: 15%;
+        display: none;
+        list-style: none;
+        background-color: white;
+        border-radius: 5px ;
+        border: 1px solid lightgray;
+        box-shadow: 3px 3px 10px lightgray;
+        width: 70%;
+        transform: rotate(180deg);
+        z-index: 100;
+    }
+    .nav-elements li {
+        margin: 1rem 0rem;
+        padding: .5rem;
+        text-align: center;
+        background-color: lightblue;
+        border-radius: 50px;
+        transform: rotate(180deg);
+
+    }
+    .nav-elements li a{
+        text-align: center;
+        width: 100%;
+        text-align: center;;
+    }
+    .nav-elements li a:hover {
+        transform: rotate(180deg);
+        color: black;
+    }
+    
+    .nav-elements li:hover {
+        color: black;
+        background-color: deepskyblue;
+        transition: .3s;
+        transform: rotate(180deg);
+    }
+
+    .darkmode{
+        text-align: center;
+    }
+
+    .darkmode img {
+        margin: 0rem;
+        border: 3px solid black;
+        height: 3rem;
+        border-radius: 50%;
+    }
+    .navigation-logo{
+        font-size: 2.5rem;
+    }
+    .navigation-logo img{
+        height: 6rem;
+    }
+
+}
+
+@media (max-width: 550px) {
+    .navigation{
+        margin-top: -1rem;
+    }
+    .navigation-logo{
+        font-size: 1.5rem;
+    }
+    .navigation-logo img{
+        height: 4rem;
+    }
+    .slice{
+        margin: .2rem;
+        width: 2.5rem;
+        height: .7rem;
+    }
+
+    .nav-elements {
+        position: absolute;
+        top: 4rem;
+        width: 90%;
+        right: 5%;
+        left: 5%;
+    }
+}

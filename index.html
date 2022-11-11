@@ -1,0 +1,400 @@
+<!DOCTYPE HTML>
+<html lang='ar'>
+
+<head>
+    <title>Almotabari3.com</title>
+    <meta charset='utf-8' />
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <link rel='icon' href='assest/_images/logo-donation.png'>
+    <link rel='stylesheet' href='assest/css/index-style.css' type='text/css'>
+    <link rel='stylesheet' href='assest/css/nav-style.css' type='text/css'>
+    <link rel='stylesheet' href='assest/css/footer-style.css' type='text/css'>
+</head>
+
+<body>
+    <!--PRELOADER INDEX PAGE-->
+
+    <div id="preload" class="preloader-gif">
+        <div class="big">
+        </div>
+        <div class="small">
+
+        </div>
+    </div>
+
+    <!--START NAVIGATION-->
+    <nav class='navigation' id="navigationx">
+        <div onclick="nav_colaps()" class="ham">
+            <div class="slice"></div>
+            <div class="slice"></div>
+            <div class="slice"></div>
+        </div>
+        <ul id="nav_colapsing" class="nav-elements">
+            <li>
+                <div class="darkmode" onclick="darkmode();">
+                    <image id="darkmodeimage" src="assest/_images/darkmode.png"></image>
+                </div>
+            </li>
+            <li>
+                <a href="#opinions">حول المنصة</a>
+            </li>
+            <li>
+                <a href="#map">مراكز التبرع</a>
+            </li>
+            <li>
+                <a href="#steps"> عملية التبرع </a>
+            </li>
+            <li>
+                <a href="#need">شروط التبرع</a>
+            </li>
+            <li>
+                <a href="#good"> فوائد التبرع</a>
+            </li>
+            <li>
+                <a href="#">الرئيسية</a>
+            </li>
+            <div id="close-nax-x" onclick="nav_colaps()" class="close-nav">X</div>
+        </ul>
+        <div class='navigation-logo'>
+            منصة المتبرع
+            <image id="darkmodeimage2" class="logoimage" src='assest/_images/logo-donation.png'></image>
+        </div>
+    </nav>
+    <!--END NAVIGATION-->
+
+    <!--WEBSITE DESCRIPTION-->
+    <div class="flex">
+        <div class="body-image">
+            <image id="darkmodeimage1" src="assest/_images/body-image.png"></image>
+        </div>
+        <div class="body-description">
+            منصة المتبرع
+            <p class="body-p">الموقع عبارة عن منصة رقمية وطنية تهذف أساسا الى تسهيل و تسريع عملية التعار بين
+                المحتاج و المتبرع , بالإضافة الى نشر و التشجيع على تقافة التبرع بالم و التعريف بمراكز تحاقن الدم
+                القريبة...إلخ </p>
+
+            <a href="#find-user-poping" class='btn-find'> البحت عن متبرع </a>
+            <a href="#register-poping" class='btn-give'> التسجيل كمتبرع </a>
+
+        </div>
+    </div>
+
+    <!--WHY DONATION IS GOOD FOR YOU-->
+    <div id="good" class="section-title">
+        ماهي فوائد التبرع بالدم؟
+    </div>
+    <div class="good-container">
+        <div class="good-element">
+            <div class="good-image">
+                <img src="assest/_images/5.png">
+            </div>
+            <div class="good-element-title">
+                الأجر و التواب
+            </div>
+            <div class="good-element-description">
+                االتبرع بالدم, يساهم في إنقاذ حياة شخص, قال تعالى (وَمَنْ أَحْيَاهَا فَكَأَنَّمَا أَحْيَا
+                النَّاسَ جَمِيعاً)
+            </div>
+        </div>
+
+        <div class="good-element good-hide">
+            <div class="good-image">
+                <img src="assest/_images/2.png">
+            </div>
+            <div class="good-element-title">
+                الأسبقية إحتياج الدم
+            </div>
+            <div class="good-element-description">
+                يتمتع المتبرعون بصفة دورية على الأسبقية للحصول على على الدم في حالة الإحتياج
+            </div>
+        </div>
+        <div class="good-element">
+            <div class="good-image">
+                <img src="assest/_images/1.png">
+            </div>
+            <div class="good-element-title">
+                تحاليل حيوية مجانية
+            </div>
+            <div class="good-element-description">
+                يمثل التبرع بالدم فرصة للاطمئنان الدوري بخصوص الإصابة ببعض الأمراض الخطيرة التي تنتقل بالدم
+                مثل فيروسات الإيدز والفيروسات الكبدية بي وسي، ومرض الزهري .. الخ
+            </div>
+        </div>
+
+    </div>
+
+    <div class="good-container">
+
+        <div class="good-element">
+            <div class="good-image">
+                <img src="assest/_images/6.png">
+            </div>
+            <div class="good-element-title">
+                تقليل حدوث جلطات القلب
+            </div>
+            <div class="good-element-description">
+                أظهرت إحدى الدراسات أن التبرع بالدم لمرة واحدة في العام على الأقل، يقلل فرص الإصابة بجلطات
+                القلب
+            </div>
+        </div>
+        <div class="good-element good-hide">
+            <div class="good-image">
+                <img src="assest/_images/3.png">
+            </div>
+            <div class="good-element-title">
+                تقليل الإصابة بالعديد من السرطانات
+            </div>
+            <div class="good-element-description">
+                أظهرت نتائج إحدى الدراسات منذ 10 سنوات، انخفاض معدلات الإصابة ببعض السرطانات الهامة لدى من
+                يقومون بالتبرع الدوري بالدم
+            </div>
+        </div>
+        <div class="good-element">
+            <div class="good-image">
+                <img src="assest/_images/4.png">
+            </div>
+            <div class="good-element-title">
+                الحفاظ على سلامة الكبد
+            </div>
+            <div class="good-element-description">
+                يساهم التبرع الدوري بالدم في الحفاظ على الكبد من خلال الحفاظ على معدلات الحديد الطبيعية
+            </div>
+        </div>
+
+    </div>
+
+    <!--WHAT YOU NEED TO HAVE TO DONATE BLOOD -->
+
+    <div id="need" class="need-updater section-title">
+        ماهي شروط التبرع بالدم؟
+    </div>
+
+
+    <div class="need-container">
+
+        <div class="need-image">
+            <img src="assest/_images/peakblood.png">
+        </div>
+
+        <div>
+            <p class="tirth-sectionp">
+                يمكن لجميع الأشخاص التبرع بالدم في حال تمتعهم بصحة جيدة. وهناك بعض المتطلبات الأساسية التي لا بد من
+                الوفاء بها للتبرع بالدم
+            </p>
+            <ul class="need-ul">
+                <li class="need-li">يبلغ وزن المتبرع 50 كيلوغراماً على الأقل -</li>
+                <li class="need-li">يتراوح عمر المتبرع بين 18 و65 سنة -</li>
+                <li class="need-li">يجب على المتبرع التمتع بصحة جيدة عندما يتبرع بالدم -</li>
+                <li class="need-li"> أن لا تزيد درجة الحرارة عن 37 درجة مئوية -</li>
+                <li class="need-li">أن تكون نسبة الهيموجلوبين للرجال من 14- 17 جم، وللنساء من 12-14 جم -</li>
+                <li class="need-li">أن يكون معدل ضغط الدم أقل من120/80 ملم زئبق -</li>
+                <li class="need-li"> أن يكون النبض بين 50-100 في الدقيقة -</li>
+            </ul>
+        </div>
+    </div>
+
+    <!--BLOOD DONATION STEPS :)-->
+
+    <div id="steps" class="steps-updater ">
+        مراحل عملية التبرع بالدم
+    </div>
+
+    <div class="donation-steps-container">
+        <div class="donation-step">
+            <div class="step-image">
+                <img src="assest/_images/instrinction-2.png">
+            </div>
+            <div class="step-title">
+                قبل عملية التبرع بالدم
+            </div>
+            <div class="step-desc">
+                يجب ان يحصل المتبرع على قسط كاف من النوم ليلة التبرع بالإضافة االى تناول وجبة صحية قبل التبرع, و تأكد من شرب كميات لابأس بها من الماء, قبل التبرع قد يطلب منك ملئ  سجل طبي بسيطويتضمن أسئلة عن صحة المتبرع, وستخضع أيضًا لفحص بدني سريع. وهو فحص
+                يتضمن التحقق من ضغط دمك ونبضك ودرجة حرارتك                
+            </div>
+        </div>
+        <div class="step-separator">
+            <img src="assest/_images/back-to-top.png" alt="">
+        </div>
+        <div class="donation-step">
+            <div class="step-image">
+                <img src="assest/_images/himan.png">
+            </div>
+            <div class="step-title">
+                عملية التبرع بالدم
+            </div>
+            <div class="step-desc">
+                وتُدخل إبرة جديدة معقمة في أحد أوردة ذراعك. وتكون متصلة بكيس دم. سيكون عليك شد قبضة يدك عدة مرات للمساعدة على تدفق الدم من الوريد. يُجمع الدم في البداية أنابيب لاختباره. وبعد يُترك الدم لملء الكيس. وتظل الإبرة عادة في مكانها لمدة 10 دقائق تقريبًا. بعد الانتهاء من التبرع، تُنزع الإبرة وتوضع مكانها لاصقة صغيرة وتُلف ضمادة حول ذراعك
+                
+            </div>
+        </div>
+        <div class="step-separator">
+            <img src="assest/_images/back-to-top.png" alt="">
+        </div>
+        <div class="donation-step">
+            <div class="step-image">
+                <img src="assest/_images/instrinction-1.png">
+            </div>
+            <div class="step-title">
+                بعد عملية التبرع باللدم
+            </div>
+            <div class="step-desc">
+        بعد التبرع بالدم، ستجلس في وحدة للملاحظة حيث يمكنك الاسترخاء وتناول وجبة خفيفة. وبعد مرور دقيقة، يمكنك المغادرة,احرص على شرب الكثير من السوائل.احرص على شرب الكثير من السوائل, تجنب ممارسة الأنشطة البدنية المرهقة أو رفع الأثقال لمدة خمس ساعات تقريبًا.حافظ على جفاف الضمادة وبقائها في مكانها لمدة خمس ساعات.
+            </div>
+        </div>
+    </div>
+
+
+    <!--OPINIONS ABOUT ALMOTABARI3-->
+
+    <div id="opinions" class="section-title">
+        أراء مستخدمي منصة المتبرع
+    </div>
+
+    <div class="opinions">
+        <div class="opinion opinion-1">
+            <div class="opinion-image">
+                <img src="assest/_images/3.png">
+            </div>
+            <div class="opinion-name">
+                AYOUB AMAZIGH
+            </div>
+            <div class="opinion-stars">
+                <img src="assest/_images/star.png" alt="">
+                <img src="assest/_images/star.png" alt="">
+                <img src="assest/_images/star.png" alt="">
+                <img src="assest/_images/star.png" alt="">
+                <img src="assest/_images/star.png" alt="">
+            </div>
+            <div class="opinion-opinion">
+                تجربتي في استخدام الموقع رائعة, تمكنت بفضله من إيجاد متبرع بسرعة ففائقة, حقا يمتل إضافة رائعة،
+                شككرا للمطوري
+            </div>
+        </div>
+        <div class="opinion opinion-2 ">
+            <div class="opinion-image">
+                <img src="assest/_images/3.png">
+            </div>
+            <div class="opinion-name">
+                AYOUB AMAZIGH
+            </div>
+            <div class="opinion-stars">
+                <img src="assest/_images/star.png" alt="">
+                <img src="assest/_images/star.png" alt="">
+                <img src="assest/_images/star.png" alt="">
+                <img src="assest/_images/star.png" alt="">
+                <img src="assest/_images/star.png" alt="">
+            </div>
+            <div class="opinion-opinion">
+                تجربتي في استخدام الموقع رائعة, تمكنت بفضله من إيجاد متبرع بسرعة ففائقة, حقا يمتل إضافة رائعة،
+                شككرا للمطوري
+            </div>
+        </div>
+        <div class="opinion">
+            <div class="opinion-image">
+                <img src="assest/_images/3.png">
+            </div>
+            <div class="opinion-name">
+                AYOUB AMAZIGH
+            </div>
+            <div class="opinion-stars">
+                <img src="assest/_images/star.png" alt="">
+                <img src="assest/_images/star.png" alt="">
+                <img src="assest/_images/star.png" alt="">
+                <img src="assest/_images/star.png" alt="">
+                <img src="assest/_images/star.png" alt="">
+            </div>
+            <div class="opinion-opinion">
+                تجربتي في استخدام الموقع رائعة, تمكنت بفضله من إيجاد متبرع بسرعة ففائقة, حقا يمتل إضافة رائعة،
+                شككرا للمطوري
+            </div>
+        </div>
+        <div class="opinion">
+            <div class="opinion-image">
+                <img src="assest/_images/3.png">
+            </div>
+            <div class="opinion-name">
+                AYOUB AMAZIGH
+            </div>
+            <div class="opinion-stars">
+                <img src="assest/_images/star.png" alt="">
+                <img src="assest/_images/star.png" alt="">
+                <img src="assest/_images/star.png" alt="">
+                <img src="assest/_images/star.png" alt="">
+                <img src="assest/_images/star.png" alt="">
+            </div>
+            <div class="opinion-opinion">
+                تجربتي في استخدام الموقع رائعة, تمكنت بفضله من إيجاد متبرع بسرعة ففائقة, حقا يمتل إضافة رائعة،
+                شككرا للمطوري
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--START FOOTER -->
+    <div class="footer">
+        <div class="footer-separator">
+        </div>
+        <div class="footer-info">
+            <div class="external-links">
+                <div class="footer-tiltel-tile">
+                    روابط خارجية
+                </div>
+                <a href="">وزارة الصحة المغربية</a>
+                <a href="https://www.who.int/ar">منضمة الصحة العالمية</a>
+                <a href="https://www.who.int/ar/campaigns/world-blood-donor-day/2021">اليوم العالمي للمتبرع</a>
+
+            </div>
+            <div class="footer-btn">
+                <div class="footer-tiltel-tile">
+                    إستخدام الموقع
+                </div>
+                <button class="r">التسجيل كمتبرع</button>
+                <button class="g">البحت عن متبرع </button>
+            </div>
+            <div class="footer-title">
+                <div class="footer-tiltel-tile">
+                    منصة المتبرع
+                </div>
+                <div class="footer-description">
+                    الموقع عبارة عن منصة رقمية وطنية تهذف أساسا الى تسهيل و تسريع عملية التعار بين المحتاج و
+                    المتبرع , بالإضافة الى نشر و التشجيع على تقافة التبرع بالم و التعريف بمراكز تحاقن الدم
+                    القريبة...إلخ
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+            <div class="item1">copyright Almotabari3 2022</div>
+        </div>
+    </div>
+    <!--END FOOTER-->
+
+
+    <!--BACK TO TOP BUTTON-->
+
+    <div onclick="gototop()" id="backtotop" class="back-to-top">
+        <img src="assest/_images/back-to-top.png ">
+    </div>
+
+    <script src="assest/scripts/javascript/preloader.js"></script>
+    <script src="assest/scripts/javascript/dark-mode.js"></script>
+    <script src="assest/scripts/javascript/back-to-top.js"></script>
+    <script src="assest/scripts/javascript/nav_colaps.js"></script>
+</body>
+
+</html>
