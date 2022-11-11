@@ -32,7 +32,6 @@ body{
 .darkmodebody {
     filter: invert(1) hue-rotate(180deg);
     transition: .4s;
-
 }
 
 

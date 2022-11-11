@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Changa:wght@300;400;500;700&display=swap');
+@import "nav-style.css";
+@import "footer-style.css";
+
 
 * {
     margin: 0;
@@ -9,16 +12,14 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    color: rgb(54, 54, 54);
+    color: black;
 }
 
 html{
     scroll-behavior: smooth;
+    
 }
 
-body{
-    background-image: linear-gradient(to top right, white, aliceblue);
-}
 
 
 .preloader-gif{
@@ -91,7 +92,6 @@ body{
 .body-description {
     padding: 4rem;
     font-size: 3rem;
-
 }
 
 
@@ -104,7 +104,6 @@ body{
 .btn-give {
     margin: 1rem 3rem;
     padding: .5rem 1rem 1rem 1rem;
-    background-color: rgb(0, 255, 55);
     font-size: 2rem;
     font-weight: 400;
     border-radius: 6px;
@@ -115,7 +114,6 @@ body{
 .btn-find {
     margin: 2rem 3rem;
     padding: .5rem 1rem 1rem 1rem;
-    background-color: cyan;
     font-size: 2rem;
     font-weight: 400;
     border-radius: 6px;
@@ -124,18 +122,14 @@ body{
 }
 
 .btn-find:hover {
-    background-color: black;
     transform: scale(1.1);
     transition: .5s;
-    color: white;
     font-size: 2.03rem;
 }
 
 .btn-give:hover {
-    background-color: black;
     transform: scale(1.1);
     transition: .5s;
-    color: white;
     font-size: 2.03rem;
 }
 
@@ -145,7 +139,6 @@ body{
     text-align: center;
     font-size: 3rem;
     font-weight: 500;
-    color: rgb(64, 6, 112);
 }
 
 .map-updater{
@@ -161,7 +154,6 @@ body{
     text-align: center;
     font-size: 3rem;
     font-weight: 500;
-    color: rgb(64, 6, 112);
 }
 
 
@@ -189,10 +181,8 @@ body{
 
     margin: 1rem 1rem 1rem 1rem;
     padding: 1rem;
-    background-color: white;
-    border-radius: 5px;
     border: 1px solid lightgray;
-    box-shadow: 1px 1px 5px lightgray;
+
 }
 
 .opinion-image{
@@ -245,14 +235,12 @@ body{
     text-align: center;
     font-weight: 500;
     font-size: 1.2rem;
-    color: rgb(4, 8, 139);
 }
 
 .good-element-description {
     font-size: 1rem;
     margin-top: .5rem;
     text-align: center;
-    color: rgba(0, 4, 7, 0.74);
     font-weight: 400;
 }
 
@@ -262,7 +250,6 @@ body{
 
 .tirth-sectionp{
     padding: 0rem 2rem;
-    color: rgb(62, 30, 71);
     float: right;
     font-size: 1.7rem;
 }
@@ -276,8 +263,6 @@ body{
 
 .need-li{
     font-size: 1.5rem;
-    color: rgb(78, 80, 82)
-    
 }
 .need-image img{
     height: 35rem;
@@ -307,10 +292,7 @@ body{
 .donation-step{
     margin: 1rem 2rem;
     padding: 1rem;
-    background-color: white;
-    border-radius: 2px;
-    border: 1px solid lightgray;
-    box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.212);
+    
 }
 
 .step-title{
@@ -361,7 +343,6 @@ body{
     text-align: center;
     font-size: 1.6rem;
     font-weight: 500;
-    color: rgb(63, 58, 58);
 }
 
 .close-time-wraper{

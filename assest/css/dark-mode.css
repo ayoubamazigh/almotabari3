@@ -1,0 +1,53 @@
+body{
+    background-color: rgb(22, 22, 22);
+}
+.regular-text{
+    color: rgb(204, 200, 200);
+}
+.small-title{
+    color: white;
+}
+.big-title{
+    color: rgb(248, 183, 250);
+}
+.btn-primary{
+    background-color: rgb(0, 255, 0);
+    color: black;
+}
+.btn-primary:hover{
+    background-color: white;
+    color: black;
+}
+.btn-secondary{
+    background-color: cyan;
+    color: black;
+}
+
+.btn-secondary:hover{
+    background-color: white;
+    color: black;
+}
+
+.hovering-popup{
+    background-color: rgba(22, 22, 22, 0.651);
+    border: 1px solid rgb(129, 129, 129);
+    border-radius: 5px;
+}
+
+.hovering-popup:hover{
+    box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.212);
+    transform: scale(1.05);
+    transition: .3s;
+}
+
+.nav-title{
+    color: rgb(212, 212, 212);
+}
+.nav-title:hover{
+    color:aqua;
+}
+
+.darkmode img {
+    border: 3px solid black;
+    filter: invert(.9);
+}
