@@ -1,6 +1,11 @@
 body{
     background-color: rgb(22, 22, 22);
 }
+
+.slice{
+    filter: invert(1);
+}
+
 .regular-text{
     color: rgb(204, 200, 200);
 }
@@ -30,7 +35,7 @@ body{
 
 .hovering-popup{
     background-color: rgba(22, 22, 22, 0.651);
-    border: 1px solid rgb(129, 129, 129);
+    border: 1px solid rgba(129, 129, 129, 0.295);
     border-radius: 5px;
 }
 
@@ -40,6 +45,12 @@ body{
     transition: .3s;
 }
 
+.hovering-popup-noscal{
+    background-color: rgba(0, 0, 0, 0.651);
+    border: 1px solid rgb(129, 129, 129);
+    border-radius: 5px;
+}
+
 .nav-title{
     color: rgb(212, 212, 212);
 }
@@ -47,7 +58,38 @@ body{
     color:aqua;
 }
 
-.darkmode img {
-    border: 3px solid black;
-    filter: invert(.9);
+.darkmode{
+    border: 3px solid rgba(243, 243, 243, 0.116);
+    filter: invert(1);
+}
+
+@media(max-width: 1050px) {
+    .nav-elements {
+        background-color: black;
+        border: 1px solid rgba(211, 211, 211, 0.322);
+        box-shadow: 3px 3px 10px rgba(8, 8, 8, 0.144);
+    }
+
+    .nav-elements li{
+        background-color: rgba(173, 216, 230, 0.322);
+    }
+    .nav-elements li a{
+        color: white;
+    }
+
+    .nav-elements li a:hover {
+        color: black;
+    }
+    
+    .nav-elements li:hover {
+        background-color: white;
+    }
+}
+
+.added-popup{
+    background-color: rgba(46, 43, 43, 0.459);
+}
+
+.added-popup-inver{
+    background-color: black;
 }

@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Changa:wght@300;400;500;700&display=swap');
+@import "nav-style.css";
+@import "footer-style.css";
 
 * {
     margin: 0;
@@ -47,3 +49,141 @@ html{
     filter: invert(1) hue-rotate(180deg);
     transition: .4s;
 }
+
+.search-form{
+    margin: 2rem auto;
+    padding: 1rem;
+    width: 80%;
+    border-radius: 5px;
+}
+
+
+.register-container{
+    display: block;
+}
+
+.register-row{
+    padding: 2rem 0rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.rigister-col{
+    width: 50%;
+    text-align: center;
+    
+}
+.rigister-col input{
+    width: 90%;
+    border-radius: 5px;
+    border: 2px solid gray;
+    text-align: center;
+    
+}
+
+.rigister-col input:hover{
+    border: 2px solid skyblue;
+    transform: scale(1.01);
+}
+
+.rigister-col select{
+    padding: 3px;
+    width: 90%;
+    border-radius: 5px;
+    border: 2px solid gray;
+    text-align-last: center;
+   text-align: center;
+   -ms-text-align-last: center;
+   -moz-text-align-last: center;
+}
+
+.rigister-col select:hover{
+    border: 2px solid skyblue;
+    transform: scale(1.01);
+}
+
+.rigister-col div{
+    padding: .5rem 0rem;
+    margin-right: 6%;
+    font-size: 1.2rem;
+}
+
+.submit-wraper{
+    width: 100%;
+    text-align: center;
+}
+
+.submit-form{
+    margin: 2rem 0rem 1rem 0rem;
+    padding: .5rem 1rem;
+    width: 20%;
+    right: 0;
+    left: 0;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+
+.submit-form:hover{
+    background-color: black;
+    color: white;
+    transform: scale(1.05);
+    transition: .4s;
+}
+
+.show-data{
+    margin: 1rem;
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+.show-data table{
+    margin: 0 auto 0 auto;
+    width: 60%;
+    
+}
+
+.show-data table tr td{
+    padding: .5rem 1rem;
+    text-align: center;
+    border: 1px solid black;
+    border: 1px solid rgba(211, 211, 211, 0.11);
+}
+@media (max-width: 1000px) {
+    .search-form{
+        width: 90%;
+    }
+    .show-data table{
+        width: 80%;
+    }
+}
+
+@media (max-width: 850px) {
+    .body-title{
+        font-size: 2.5rem;
+    }
+    .register-row{
+        display: inline-block;
+    }
+    .rigister-col{
+        width: 100%;
+    }
+    .submit-form{
+        width: 50%;
+    }
+    .show-data table{
+        width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+    .show-data table{
+        width: 95%;
+    }
+}
+

@@ -34,6 +34,12 @@ body{
     border-radius: 5px;
 }
 
+.hovering-popup-noscal{
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
 .hovering-popup:hover{
     box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.212);
     transform: scale(1.05);
@@ -50,4 +56,23 @@ body{
 
 .darkmode img {
     border: 3px solid black;
+}
+
+@media(max-width: 1050px) {
+    .nav-elements {
+        background-color: white;
+        border: 1px solid lightgray;
+        box-shadow: 3px 3px 10px rgba(211, 211, 211, 0.219);
+    }
+    .nav-elements li {
+        background-color: lightblue;
+    }
+    .nav-elements li a:hover {
+        color: black;
+    }
+    
+    .nav-elements li:hover {
+        color: black;
+        background-color: deepskyblue;
+    }
 }

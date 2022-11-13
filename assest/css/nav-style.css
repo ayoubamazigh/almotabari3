@@ -76,7 +76,7 @@
 }
 
 .darkmode:hover {
-    transform: scale(1.01);
+    transform: scale(1);
     transition: .4s;
 }
 
@@ -123,10 +123,7 @@
         right: 15%;
         display: none;
         list-style: none;
-        background-color: white;
         border-radius: 5px ;
-        border: 1px solid lightgray;
-        box-shadow: 3px 3px 10px lightgray;
         width: 70%;
         transform: rotate(180deg);
         z-index: 100;
@@ -135,7 +132,6 @@
         margin: 1rem 0rem;
         padding: .5rem;
         text-align: center;
-        background-color: lightblue;
         border-radius: 50px;
         transform: rotate(180deg);
 
@@ -147,12 +143,9 @@
     }
     .nav-elements li a:hover {
         transform: rotate(180deg);
-        color: black;
     }
     
     .nav-elements li:hover {
-        color: black;
-        background-color: deepskyblue;
         transition: .3s;
         transform: rotate(180deg);
     }

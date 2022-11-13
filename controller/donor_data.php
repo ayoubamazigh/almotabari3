@@ -20,7 +20,7 @@
                 header('location: ../index.php?message=exist');
             }else{
                 if($donor->adddonor()){
-                    header('location: ../index.php?message=added');
+                    header('location: ../view/add_donor.php#added-popup');
                 }else{
                     header('location: ../index.php?message=fialed');
                 }
