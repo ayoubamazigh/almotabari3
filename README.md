@@ -1,4 +1,4 @@
-<center><h1> almotabari3 منصة المتبرع </h1></center>
+<center><h1> منصة المتبرع </h1></center>
 <center><h1> Almotabari3 Website </h1></center>
 <hr />
 
