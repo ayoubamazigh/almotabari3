@@ -1,6 +1,7 @@
 <?php
-    include '../assest/scripts/php/connection.php';
-
+    
+    // ADDING NEEDED FILES
+    include '../assest/scripts/php/connection.php'; /// connection to the database file
 
     Class Donor{
         private $identification;
@@ -11,6 +12,7 @@
         private $city;
         private $cn_donor;
 
+        //constructor
         public Function __construct($identificationc, $fist_namec,  $last_namec, $phonec, $Blood_typec,$city){
             $this -> identification = $identificationc;
             $this -> fist_name = $fist_namec;
@@ -25,6 +27,8 @@
 
         }
 
+
+        // fonction for checking if the donor alredy exists 
         public function checkdonor(){
 
                 $id = $this->getIdentification();
@@ -41,7 +45,7 @@
         }
 
 
-
+        // function to add a donor to the databases
         public function adddonor(){
 
                 $id = $this->getIdentification();
@@ -60,23 +64,8 @@
                 }else{
                         return false;
                 }
-                
+ 
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         // Geters
@@ -180,14 +169,5 @@
                 return $this;
         }
     }
-
-
-
-
-
-
-
-
-
 
 ?>

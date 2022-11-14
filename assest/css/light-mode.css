@@ -2,13 +2,13 @@ body{
     background-color: aliceblue;
 }
 .regular-text{
-    color: rgb(46, 46, 46);
+    color: rgb(146, 140, 140);
 }
 .small-title{
     color: rgb(76, 22, 107);
 }
 .big-title{
-    color: rgb(89, 22, 92);
+    color: rgb(38, 15, 77);
 }
 .btn-primary{
     background-color: rgb(0, 255, 0);
@@ -29,13 +29,13 @@ body{
 }
 
 .hovering-popup{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.678);
     border: 1px solid lightgray;
     border-radius: 5px;
 }
 
 .hovering-popup-noscal{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.678);
     border: 1px solid lightgray;
     border-radius: 5px;
 }

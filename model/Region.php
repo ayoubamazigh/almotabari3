@@ -5,19 +5,12 @@
         private $identification; 
         private $region;
 
-        
-        
+        // constructor 
         Public Function __construct($identificationc, $reg){
             $this->identification = $identificationc;
             $this->region = $reg;
         }
 
-        
-
-        
-        
-        
-        
 
         /**
          * Get the value of identification
@@ -59,8 +52,5 @@
                 return $this;
         }
     }
-
-
-
 
 ?>

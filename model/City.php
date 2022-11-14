@@ -1,12 +1,10 @@
 <?php
 
-
     Class City{
         private $identification; 
         private $city;
 
-        
-        
+        /// CONSTRUCTOR FUNCTION
         Public Function __construct($identificationc, $c){
             $this->identification = $identificationc;
             $this->city = $c;

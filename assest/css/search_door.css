@@ -50,12 +50,20 @@ html{
     transition: .4s;
 }
 
+.register-description{
+    padding: .5rem 15%;
+    color: rgb(255, 0, 0);
+    text-align: center;
+    font-size: 1rem;
+}
+
 .search-form{
     margin: 2rem auto;
     padding: 1rem;
     width: 80%;
     border-radius: 5px;
 }
+
 
 
 .register-container{

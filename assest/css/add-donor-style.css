@@ -21,7 +21,6 @@ body{
     position: relative;
 }
 
-
 .register-form{
     margin: 2rem auto 3rem auto;
     padding: 0rem 1rem 1rem 1rem;
@@ -38,7 +37,7 @@ body{
 
 .register-description{
     padding: .5rem 15%;
-    color: red;
+    color: rgba(250, 76, 76, 0.384);
     text-align: center;
     font-size: 1rem;
 }

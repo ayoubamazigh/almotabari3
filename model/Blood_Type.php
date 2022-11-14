@@ -5,8 +5,7 @@
         private $identification; 
         private $blood_type;
 
-        
-        
+        // THE CONSTRUCTOR FUNCTION 
         Public Function __construct($identificationc, $blood_typec){
             $this->identification = $identificationc;
             $this->blood_type = $blood_typec;
@@ -51,14 +50,5 @@
                 return $this;
         }
         
-
-        
-        
-        
-        
     }
-
-
-
-
 ?>

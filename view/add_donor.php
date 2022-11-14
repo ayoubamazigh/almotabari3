@@ -1,8 +1,11 @@
 <?php
-    include  "../assest/scripts/php/connection.php";
-    include  "../model/Blood_Type.php";
-    include  "../model/City.php";
 
+    // adding php class files
+    include  "../assest/scripts/php/connection.php"; // connection to database file
+    include  "../model/Blood_Type.php"; // blood type class file
+    include  "../model/City.php"; // city class file
+
+    // checking for get message variable
     if (isset($_GET['message'])){
         $message = $_GET['message'];
         if(!empty($message) ){
@@ -14,10 +17,11 @@
         }
     }
 
-
-
-    $cn = new Connection();
     
+    $cn = new Connection();
+
+
+    // loading blood types from the database
     $blood_type_array = null;
     $counter = 0;
     $query = "SELECT * FROM blood_type;";
@@ -31,23 +35,18 @@
     }
 
 
-
+    //loading citys from the database
     $city_array = null;
     $counter = 0;
     $query = "SELECT * FROM city ORDER BY City;";
             
     $result = mysqli_query($cn->getConnection(), $query);
             
-
     while ($row = mysqli_fetch_array($result)){
         $city = new City($row[0],$row[1]);
         $city_array[$counter] = $city;
         $counter++;
     }
-
-    
-
-
 
 ?>
 <!DOCTYPE HTML>
@@ -66,7 +65,7 @@
     <!--START NAVIGATION-->
     <nav class='navigation' id="navigationx">
         <div onclick="nav_colaps()" class="ham">
-            <div class="slice" ></div>
+            <div class="slice"></div>
             <div class="slice"></div>
             <div class="slice"></div>
         </div>
@@ -77,22 +76,22 @@
                 </div>
             </li>
             <li>
-                <a class="nav-title" href="#opinions">حول المنصة</a>
+                <a class="nav-title" href="../index.html#opinions">حول المنصة</a>
             </li>
             <li>
-                <a class="nav-title" href="#map">مراكز التبرع</a>
+                <a class="nav-title" href="../index.html#map">مراكز التبرع</a>
             </li>
             <li>
-                <a class="nav-title" href="#steps"> عملية التبرع </a>
+                <a class="nav-title" href="../index.html#steps"> عملية التبرع </a>
             </li>
             <li>
-                <a class="nav-title" href="#need">شروط التبرع</a>
+                <a class="nav-title" href="../index.html#need">شروط التبرع</a>
             </li>
             <li>
-                <a class="nav-title" href="#good"> فوائد التبرع</a>
+                <a class="nav-title" href="../index.html#good"> فوائد التبرع</a>
             </li>
             <li>
-                <a class="nav-title" href="#">الرئيسية</a>
+                <a class="nav-title" href="../index.html#">الرئيسية</a>
             </li>
             <div id="close-nax-x" onclick="nav_colaps()" class="close-nav">X</div>
         </ul>
@@ -102,107 +101,99 @@
         </div>
     </nav>
     <!--END NAVIGATION-->
-        <form class="register-form hovering-popup-noscal" action="../controller/donor_data.php" method="post">
 
-            <div class="register-title big-title">
-                التسجيل كمتبرع
-            </div>
-            <div class="register-description">
-                لن يتم مشاركة المعطيات التي يتم إدخالها هنا مع أي جهة خارجية من غير رقم الإسم الأول و رقم الهاتف و مدينة
-                الإقامة
-            </div>
 
-            <div class="register-container">
-                <div class="register-row">
-                    <div class="rigister-col rl">
-                        <div class="regular-text" >
-                            :الإسم العائلي
-                        </div>
-                        <input name='lastname' onkeypress='return !(event.charCode >= 48 && event.charCode <= 57)'
-                            type="text" placeholder="المرجو إدخال الإسم العائلي" MaxLength='14' required>
+    <!-- REGISTERING FORM  -->
+
+    <form class="register-form hovering-popup-noscal" action="../controller/donor_data.php" method="post">
+
+        <div class="register-title big-title">
+            التسجيل كمتبرع
+        </div>
+        <div class="register-description">
+            لن يتم مشاركة المعطيات التي يتم إدخالها هنا مع أي جهة خارجية من غير رقم الإسم الأول و رقم الهاتف و مدينة
+            الإقامة
+        </div>
+
+        <div class="register-container">
+            <div class="register-row">
+                <div class="rigister-col rl">
+                    <div class="regular-text">
+                        :الإسم العائلي
                     </div>
-                    <div class="rigister-col rr">
-                        <div class="regular-text" >
-                            :الإسم الأول
-                        </div>
-                        <input name='firstname' onkeypress='return !(event.charCode >= 48 && event.charCode <= 57)'
-                            type="text" placeholder="المرجو إدخال الإسم الأول" MaxLength='14' required>
-                    </div>
-
+                    <input name='lastname' onkeypress='return !(event.charCode >= 48 && event.charCode <= 57)'
+                        type="text" placeholder="المرجو إدخال الإسم العائلي" MaxLength='14' required>
                 </div>
-                <div class="register-row">
-                    <div class="rigister-col rl">
-                        <div class="regular-text" >
-                            فصيلة الدم
-                        </div>
-                        <select name='bloodtype' required>
-                            <option value="" disabled selected hidden>المرجو إختيار فصيلة دم</option>
-                            <?php
+                <div class="rigister-col rr">
+                    <div class="regular-text">
+                        :الإسم الأول
+                    </div>
+                    <input name='firstname' onkeypress='return !(event.charCode >= 48 && event.charCode <= 57)'
+                        type="text" placeholder="المرجو إدخال الإسم الأول" MaxLength='14' required>
+                </div>
+
+            </div>
+            <div class="register-row">
+                <div class="rigister-col rl">
+                    <div class="regular-text">
+                        فصيلة الدم
+                    </div>
+                    <select name='bloodtype' required>
+                        <option value="" disabled selected hidden>المرجو إختيار فصيلة دم</option>
+                        <?php
 
                                 foreach ($blood_type_array as $blood_type) {
                                     $b_id = $blood_type->getIdentification();
                                     $b_name = $blood_type->getBlood_type() . " فصيلة الدم ";
                                     echo "<option value='$b_id'>$b_name</option>";
                                 }
-                            
+
                             ?>
-
-
-                        </select>
-                    </div>
-                    <div class="rigister-col rr">
-                        <div class="regular-text" >
-                            :رقم البطاقة الوطنية للتعريف
-                        </div>
-                        <input name='cni' type="text" placeholder="اللمرجو توفير رقم بطاقتكم الوطنية" MaxLength='10'
-                            required>
-                    </div>
-
+                    </select>
                 </div>
-                <div class="register-row">
- 
-
-
-                    <div class="rigister-col rl">
-                        <div class="regular-text" >
-                            :المدينة
-                        </div>
-                        <select name='city' required>
-
-                            <option value="" disabled selected hidden>المرجو إختيار مدينتكم</option>
-                            <?php
+                <div class="rigister-col rr">
+                    <div class="regular-text">
+                        :رقم البطاقة الوطنية للتعريف
+                    </div>
+                    <input name='cni' type="text" placeholder="اللمرجو توفير رقم بطاقتكم الوطنية" MaxLength='10'
+                        required>
+                </div>
+            </div>
+            <div class="register-row">
+                <div class="rigister-col rl">
+                    <div class="regular-text">
+                        :المدينة
+                    </div>
+                    <select name='city' required>
+                        <option value="" disabled selected hidden>المرجو إختيار مدينتكم</option>
+                        <?php
 
                                 foreach ($city_array as $cityo ) {
                                     $city_c = $cityo->getCity();
                                     $city_id = $cityo->getIdentification();
                                     echo "<option value='$city_id' >$city_c</option>";
-
                                 }
 
                             ?>
-
-                        </select>
-                    </div>
-
-
-
-                    <div class="rigister-col rr">
-                        <div class="regular-text" >
-                            :رقم الهاتف
-                        </div>
-                        <input name='phone' onkeypress='return event.charCode >= 48 && event.charCode <= 57' type="text"
-                            placeholder="المرجو توفير رقم هاتف شغال" MaxLength='10' required>
-                    </div>
-
+                    </select>
                 </div>
+                <div class="rigister-col rr">
+                    <div class="regular-text">
+                        :رقم الهاتف
+                    </div>
+                    <input name='phone' onkeypress='return event.charCode >= 48 && event.charCode <= 57' type="text"
+                        placeholder="المرجو توفير رقم هاتف شغال" MaxLength='10' required>
+                </div>
+            </div>
+        </div>
+        <div class="submit-wraper">
+            <input type="submit" value='إضافة متبرع' class="submit-form btn-primary">
+        </div>
+    </form>
 
-            </div>
-            <div class="submit-wraper">
-                <input type="submit" class="submit-form btn-primary">
-            </div>
-            </form>
 
     <!--START FOOTER -->
+
     <div class="footer">
         <div class="footer-separator">
         </div>
@@ -214,7 +205,6 @@
                 <a href="">وزارة الصحة المغربية</a>
                 <a href="https://www.who.int/ar">منضمة الصحة العالمية</a>
                 <a href="https://www.who.int/ar/campaigns/world-blood-donor-day/2021">اليوم العالمي للمتبرع</a>
-
             </div>
             <div class="footer-btn">
                 <div class="footer-tiltel-tile">
@@ -233,35 +223,35 @@
                     القريبة...إلخ
                 </div>
             </div>
-
         </div>
-
-
         <div class="copyright">
             <div class="item1">copyright Almotabari3 2022</div>
         </div>
     </div>
+
     <!--END FOOTER-->
 
+
     <!-- DONOR ADDED POPUP -->
-    <div id='added-popup' class='added-popup' >
-        <div class='added-popup-inver' >
-                <div class='added-title small-title' >
-                    شكرا على الإنضمام
-                </div>
-                <p class="added-desc regular-text" >
-                    شكرا على تطوعكم على منصة المتبرع، في حالة إحتاج أحدهم الى متبرع سنوفر له رقمكم الهاتف، قصد التواصصل معكم
-                </p>
-                <div class="added-ok-div" >
-                    <a href="add_donor.php" class="added-ok btn-primary" >موافق</a>
-                </div>    
+    <div id='added-popup' class='added-popup'>
+        <div class='added-popup-inver'>
+            <div class='added-title small-title'>
+                شكرا على الإنضمام
+            </div>
+            <p class="added-desc regular-text">
+                شكرا على تطوعكم على منصة المتبرع، في حالة إحتاج أحدهم الى متبرع سنوفر له رقمكم الهاتف، قصد التواصصل معكم
+            </p>
+            <div class="added-ok-div">
+                <a href="add_donor.php" class="added-ok btn-primary">موافق</a>
+            </div>
+        </div>
     </div>
 
+
+    <!-- ADDING JAVASCRIPT FILES -->
+    <script src="../assest/scripts/javascript/dark-mode.js"></script>
+    <script src="../assest/scripts/javascript/nav_colaps.js"></script>
+
 </body>
-
-
-
-<script src="../assest/scripts/javascript/nav_colaps.js"></script>
-<script src="../assest/scripts/javascript/dark-mode.js"></script>
 
 </html>
