@@ -8,9 +8,10 @@
 <div>&nbsp;&nbsp;&nbsp;&nbsp;The site is a national digital platform that mainly aims to facilitate and speed up the acquaintance process between the needy and the donor, in addition to spreading and encouraging the culture of blood donation and introducing nearby blood transfusion centers...etc.</div>
 <br>
 
- لغات البرمجة: HTML5, CSS3, JAVASCRIPT, PHP, SQL(MySql);
+ لغات البرمجة: HTML5, CSS3, JAVASCRIPT, PHP, SQL(MySql)
  
  Programming languages: HTML5, CSS3, JAVASCRIPT, SQL(MYSQL);
+ Creation date: 14/11/2022 
  
 <div><h4>رابط الموقع: <a href='http://almotabari3.rf.gd/' >Almotabari3.com</a></div>
 
