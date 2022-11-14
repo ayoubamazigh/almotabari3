@@ -1,5 +1,7 @@
 <?php
     
+    error_reporting(0);
+
     // ADDING NEEDED FILES
     include '../assest/scripts/php/connection.php'; /// connection to the database file
 

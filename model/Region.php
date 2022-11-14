@@ -1,6 +1,7 @@
 <?php
-
-
+    
+    error_reporting(0);
+    
     Class Region{
         private $identification; 
         private $region;

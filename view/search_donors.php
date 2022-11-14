@@ -1,5 +1,5 @@
 <?php
-
+    error_reporting(0);
     // adding php class files we need :)
     include  "../assest/scripts/php/connection.php"; // connection to database file
     include  "../model/Blood_Type.php"; // blood type class file
