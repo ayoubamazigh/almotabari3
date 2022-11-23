@@ -6,11 +6,11 @@ if (window.localStorage.getItem('theme')){
         document.write("<link rel='stylesheet' href='assest/css/dark-mode.css' type='text/css'>")
         document.write("<link rel='stylesheet' href='../assest/css/dark-mode.css' type='text/css'>")
     }else{
-        window.localStorage.setItem('theme', 0)
+        window.localStorage.setItem('theme', 1)
         location.reload()
     }
 }else{
-    window.localStorage.setItem('theme', 0)
+    window.localStorage.setItem('theme', 1)
     location.reload()
 }
 

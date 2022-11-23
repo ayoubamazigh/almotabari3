@@ -309,7 +309,7 @@ html{
 
 .step-title{
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 2rem;
     font-weight: 500;
 }
 
@@ -384,14 +384,14 @@ html{
 }
 
 .back-to-top{
-    display: none;
+    display: block;
     margin: 1rem;
     bottom: 0;
     right: 0;
     position: fixed;
     cursor: pointer;
     z-index: 100;
-    opacity: .4;
+    opacity: 0;
 }
 .back-to-top:hover{
     transition: .4s;
@@ -456,7 +456,7 @@ html{
     .donation-step{
         margin: 1rem auto 1rem auto;
         padding: 1rem;
-        width: 80%;
+        width: 95%;
         background-color: white;
         border-radius: 2px;
         border: 1px solid lightgray;
@@ -533,11 +533,11 @@ html{
     }
     .map-updating{
         margin: 3rem 0rem;
-        font-size: 2.5rem;
+        font-size: 2.3rem;
     }
     .tirth-sectionp{
         
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
     .need-li{
         font-size: 1.2rem;
@@ -569,7 +569,7 @@ html{
     }
     .tirth-sectionp{
         
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     .need-li{
         font-size: 1rem;
@@ -601,7 +601,7 @@ html{
     }
 
     .need-li{
-        font-size: .9rem;
+        font-size: .7rem;
     }
     
     .body-p {

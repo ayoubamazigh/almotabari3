@@ -118,7 +118,7 @@
     }
     .nav-elements {
         padding: 1rem 1rem 0rem 1rem ;
-        position:absolute;
+        position: absolute;
         top: 5rem;
         right: 15%;
         display: none;
@@ -186,8 +186,8 @@
     }
 
     .nav-elements {
-        position: absolute;
-        top: 4rem;
+        position: fixed;
+        top: 2rem;
         width: 90%;
         right: 5%;
         left: 5%;

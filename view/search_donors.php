@@ -1,5 +1,5 @@
 <?php
-    error_reporting(0);
+    // error_reporting(0);
     // adding php class files we need :)
     include  "../assest/scripts/php/connection.php"; // connection to database file
     include  "../model/Blood_Type.php"; // blood type class file
@@ -97,223 +97,228 @@
             $result = mysqli_query($cn->getConnection(), $query);
         }
     }
-?>
 
-<!DOCTYPE HTML>
-<html lang="ar">
+    $html = <<<html
+    
+        <!DOCTYPE HTML>
+        <html lang="ar">
 
-<head>
-    <title>Almotabari3.com | البحت عن متبرع</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width initial-scale=1000px" />
-    <link rel='icon' href='../assest/_images/logo-donation.png'>
-    <link rel='stylesheet' href='../assest/css/search_door.css' type='text/css'>
-</head>
+        <head>
+            <title>Almotabari3.com | البحت عن متبرع</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width initial-scale=1.0" />
+            <link rel='icon' href='../assest/_images/logo-donation.png'>
+            <link rel='stylesheet' href='../assest/css/search_door.css' type='text/css'>
+        </head>
 
-<body>
+        <body>
 
-    <!--START NAVIGATION-->
-    <nav class='navigation' id="navigationx">
-        <div onclick="nav_colaps()" class="ham">
-            <div class="slice"></div>
-            <div class="slice"></div>
-            <div class="slice"></div>
-        </div>
-        <ul id="nav_colapsing" class="nav-elements">
-            <li>
-                <div class="darkmode" onclick="darkmode();">
-                    <image id="darkmodeimage" src="../assest/_images/darkmode.png"></image>
+            <!--START NAVIGATION-->
+            <nav class='navigation' id="navigationx">
+                <div onclick="nav_colaps()" class="ham">
+                    <div class="slice"></div>
+                    <div class="slice"></div>
+                    <div class="slice"></div>
                 </div>
-            </li>
-            <li>
-                <a class="nav-title" href="../index.html#opinions">حول المنصة</a>
-            </li>
-            <li>
-                <a class="nav-title" href="../index.html#map">مراكز التبرع</a>
-            </li>
-            <li>
-                <a class="nav-title" href="../index.html#steps"> عملية التبرع </a>
-            </li>
-            <li>
-                <a class="nav-title" href="../index.html#need">شروط التبرع</a>
-            </li>
-            <li>
-                <a class="nav-title" href="../index.html#good"> فوائد التبرع</a>
-            </li>
-            <li>
-                <a class="nav-title" href="../index.html">الرئيسية</a>
-            </li>
-            <div id="close-nax-x" onclick="nav_colaps()" class="close-nav">X</div>
-        </ul>
-        <div class='navigation-logo small-title'>
-            منصة المتبرع
-            <image id="darkmodeimage2" class="logoimage" src='../assest/_images/logo-donation.png'></image>
-        </div>
-    </nav>
-    <!--END NAVIGATION-->
-
-    <!--SEARCH FORM-->
-    <form class="search-form hovering-popup-noscal" action="#" method="POST">
-        <div class="body-title big-title">
-            البحت عن متبرع
-        </div>
-        <div class="register-description">
-            يمكنكم البحت بإستخدام الفصيلة  الدموية أو الجهة أو المدينة 
-        </div>
-        <div class="register-container">
-            <div class="register-row">
-
-                <div class="rigister-col rl">
-                    <div class="regular-text">
-                        : الجهة
-                    </div>
-                    <select name='region'>
-                        <option value="" disabled selected hidden>المرجو إختيار جهتكم</option>
-
-                        <?php
-
-                        foreach ( $region_array as $region) {
-
-                            $r_id =  $region->getIdentification();
-                            $r_name =  $region->getRegion();
-
-                            echo "<option value='$r_id'>$r_name</option>";
-                        }
-
-                    ?>
-
-                    </select>
+                <ul id="nav_colapsing" class="nav-elements">
+                    <li>
+                        <div class="darkmode" onclick="darkmode();">
+                            <image id="darkmodeimage" src="../assest/_images/darkmode.png"></image>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="nav-title" href="../index.html#opinions">حول المنصة</a>
+                    </li>
+                    <li>
+                        <a class="nav-title" href="../index.html#map">مراكز التبرع</a>
+                    </li>
+                    <li>
+                        <a class="nav-title" href="../index.html#steps"> عملية التبرع </a>
+                    </li>
+                    <li>
+                        <a class="nav-title" href="../index.html#need">شروط التبرع</a>
+                    </li>
+                    <li>
+                        <a class="nav-title" href="../index.html#good"> فوائد التبرع</a>
+                    </li>
+                    <li>
+                        <a class="nav-title" href="../index.html">الرئيسية</a>
+                    </li>
+                    <div id="close-nax-x" onclick="nav_colaps()" class="close-nav">X</div>
+                </ul>
+                <div class='navigation-logo small-title'>
+                    منصة المتبرع
+                    <image id="darkmodeimage2" class="logoimage" src='../assest/_images/logo-donation.png'></image>
                 </div>
-                <div class="rigister-col rl">
-                    <div class="regular-text">
-                        :المدينة
-                    </div>
-                    <select name='city'>
-                        <option value="" disabled selected hidden>المرجو إختيار مدينتكم</option>
+            </nav>
+            <!--END NAVIGATION-->
 
-                        <?php
-
-                            foreach ($city_array as $cityo ) {
-
-                                $city_c = $cityo->getCity();
-                                $city_id = $cityo->getIdentification();
-                                echo "<option value='$city_id' >$city_c</option>";
-
-                            }
-
-                        ?>
-
-                    </select>
+            <!--SEARCH FORM-->
+            <form class="search-form hovering-popup-noscal" action="#" method="POST">
+                <div class="body-title big-title">
+                    البحت عن متبرع
                 </div>
-                <div class="rigister-col rl">
-                    <div class="regular-text">
-                        فصيلة الدم
-                    </div>
-                    <select name='bloodtype' required>
-                        <option value="" disabled selected hidden>المرجو إختيار فصيلة دم</option>
-                        <?php
+                <div class="register-description">
+                    يمكنكم البحت بإستخدام الفصيلة  الدموية أو الجهة أو المدينة 
+                </div>
+                <div class="register-container">
+                    <div class="register-row">
 
-                            foreach ($blood_type_array as $blood_type) {
+                        <div class="rigister-col rl">
+                            <div class="regular-text">
+                                : الجهة
+                            </div>
+                            <select name='region'>
+                                <option value="" disabled selected hidden>المرجو إختيار جهتكم</option>
+    html;
 
-                                $b_id = $blood_type->getIdentification();
-                                $b_name = $blood_type->getBlood_type() . " فصيلة الدم ";
+    foreach ( $region_array as $region) {
 
-                                echo "<option value='$b_id'>$b_name</option>";
-                            }
+        $r_id =  $region->getIdentification();
+        $r_name =  $region->getRegion();
+
+        $html .= "<option value='$r_id'>$r_name</option>";
+    }
+
+    $html .= <<<html
+                            </select>
+                        </div>
+                        <div class="rigister-col rl">
+                            <div class="regular-text">
+                                :المدينة
+                            </div>
+                            <select name='city'>
+                                <option value="" disabled selected hidden>المرجو إختيار مدينتكم</option>
+
+    html;
+
+    foreach ($city_array as $cityo ) {
+
+        $city_c = $cityo->getCity();
+        $city_id = $cityo->getIdentification();
+        $html .= "<option value='$city_id' >$city_c</option>";
+
+    }
+
+    $html .= <<<html
+
+                            </select>
+                        </div>
+                        <div class="rigister-col rl">
+                            <div class="regular-text">
+                                فصيلة الدم
+                            </div>
+                            <select name='bloodtype' required>
+                                <option value="" disabled selected hidden>المرجو إختيار فصيلة دم</option>
+    html;          
+
+    foreach ($blood_type_array as $blood_type) {
+
+        $b_id = $blood_type->getIdentification();
+        $b_name = $blood_type->getBlood_type() . " فصيلة الدم ";
+
+        $html .= "<option value='$b_id'>$b_name</option>";
+    }
                         
-                        ?>
-                    </select>
+    $html .= <<<html
+                            </select>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
 
-        <div class="submit-wraper">
-            <input type="submit" value='بحت عن متبرع' class="submit-form btn-primary">
-        </div>
-    </form>
+                <div class="submit-wraper">
+                    <input type="submit" value='بحت عن متبرع' class="submit-form btn-primary">
+                </div>
+            </form>
 
-    <!-- DATA FROM THE DATABASE--->
-    <?php
+            <!-- DATA FROM THE DATABASE--->
+    html;
 
-        $seter = 0;
-        $body = <<<html
+    $seter = 0;
+    $data = <<<html
             <div class="show-data" >
                 <table class="hovering-popup-noscal">
                     <tr>
-                        <td class="small-title show-title" >رقم الهاتف</td>
-                        <td class="small-title show-title" >مدينة الإقامة</td>  
-                        <td class="small-title show-title" >الإسم الأول</td>
+                        <td class="small-title show-title" > الهاتف</td>
+                        <td class="small-title show-title" > المدينة </td>  
+                        <td class="small-title show-title" > الإسم </td>
                     </tr>
-        html;
+    html;
 
-        while ($row = mysqli_fetch_array($result)){
-            $seter++;
-            $body .= <<<html
+    while ($row = mysqli_fetch_array($result)){
+        $seter++;
+        $data .= <<<html
                 <tr>
                     <td class="regular-text">$row[1]</td>
                     <td class="regular-text">$row[3]</td>
                     <td class="regular-text">$row[0]</td>  
                 </tr>
-            html;
-        }
+        html;
+    }
 
-        $body .= <<<html
+    $data .= <<<html
                 </table>
             </div>
-        html;
+    html;
 
-        if($donor_checker == 1){
-            if ($seter == 0){
-                echo "<script>alert('نأسف! لاكن لا يوجد أي متبرع بالموصفات التي أدخلتم ')</script>";
-            }else{
-                echo $body;
-            }
+    if($donor_checker == 1){
+        if ($seter == 0){
+            $html .= "<script>alert('نأسف! لاكن لا يوجد أي متبرع بالموصفات التي أدخلتم ')</script>";
+        }else{
+            $html .= $data;
         }
-    ?>
+    }
 
+    $html .= <<<html
 
-    <!--START FOOTER -->
-    <div class="footer">
-        <div class="footer-separator">
-        </div>
-        <div class="footer-info">
-            <div class="external-links">
-                <div class="footer-tiltel-tile">
-                    روابط خارجية
+            <!--START FOOTER -->
+            <div class="footer">
+                <div class="footer-separator">
                 </div>
-                <a href="">وزارة الصحة المغربية</a>
-                <a href="https://www.who.int/ar">منضمة الصحة العالمية</a>
-                <a href="https://www.who.int/ar/campaigns/world-blood-donor-day/2021">اليوم العالمي للمتبرع</a>
+                <div class="footer-info">
+                    <div class="external-links">
+                        <div class="footer-tiltel-tile">
+                            روابط خارجية
+                        </div>
+                        <a href="">وزارة الصحة المغربية</a>
+                        <a href="https://www.who.int/ar">منضمة الصحة العالمية</a>
+                        <a href="https://www.who.int/ar/campaigns/world-blood-donor-day/2021">اليوم العالمي للمتبرع</a>
 
+                    </div>
+                    <div class="footer-btn">
+                        <div class="footer-tiltel-tile">
+                            إستخدام الموقع
+                        </div>
+                        <button class="r btn-primary">التسجيل كمتبرع</button>
+                        <button class="g btn-secondary">البحت عن متبرع </button>
+                    </div>
+                    <div class="footer-title">
+                        <div class="footer-tiltel-tile">
+                            منصة المتبرع
+                        </div>
+                        <div class="footer-description">
+                            الموقع عبارة عن منصة رقمية وطنية تهذف أساسا الى تسهيل و تسريع عملية التعار بين المحتاج و
+                            المتبرع , بالإضافة الى نشر و التشجيع على تقافة التبرع بالم و التعريف بمراكز تحاقن الدم
+                            القريبة...إلخ
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <div class="item1">copyright Almotabari3 2022</div>
+                </div>
             </div>
-            <div class="footer-btn">
-                <div class="footer-tiltel-tile">
-                    إستخدام الموقع
-                </div>
-                <button class="r btn-primary">التسجيل كمتبرع</button>
-                <button class="g btn-secondary">البحت عن متبرع </button>
-            </div>
-            <div class="footer-title">
-                <div class="footer-tiltel-tile">
-                    منصة المتبرع
-                </div>
-                <div class="footer-description">
-                    الموقع عبارة عن منصة رقمية وطنية تهذف أساسا الى تسهيل و تسريع عملية التعار بين المحتاج و
-                    المتبرع , بالإضافة الى نشر و التشجيع على تقافة التبرع بالم و التعريف بمراكز تحاقن الدم
-                    القريبة...إلخ
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-            <div class="item1">copyright Almotabari3 2022</div>
-        </div>
-    </div>
-    <!--END FOOTER-->
+            <!--END FOOTER-->
 
-    <!--ADDING JAVASCRIPT FILES-->
-    <script src="../assest/scripts/javascript/dark-mode.js"></script>
-    <script src="../assest/scripts/javascript/nav_colaps.js"></script>
+            <!--ADDING JAVASCRIPT FILES-->
+            <script src="../assest/scripts/javascript/dark-mode.js"></script>
+            <script src="../assest/scripts/javascript/nav_colaps.js"></script>
 
-</body>
+        </body>
 
-</html>
+        </html>
+
+    html;
+
+    echo $html;
+
+?>
