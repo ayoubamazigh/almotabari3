@@ -13,6 +13,6 @@
  Programming languages: HTML5, CSS3, JAVASCRIPT, SQL(MYSQL);
  Creation date: 14/11/2022 
  
-<div><h4>رابط الموقع: <a href='http://almotabari3.rf.gd/' >Almotabari3.com</a></div>
+<div><h4>رابط الموقع: <a href='http://almotabari3.ezyro.com/' >Almotabari3.com</a></div>
 
 BY ME: ayoub amazigh
