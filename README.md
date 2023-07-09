@@ -14,7 +14,7 @@
  Creation date: 14/11/2022 
  
 
-<div><h4>رابط الموقع: <a href='http://almotabari3.ezyro.com/' >Almotabari3.com</a></div>
+<div><h4>رابط الموقع: <a href='https://almotabari3.000webhostapp.com/' >Almotabari3.com</a></div>
 
 
 BY ME: ayoub amazigh
