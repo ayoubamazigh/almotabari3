@@ -4,7 +4,9 @@
 
 ## Overview
 
-The Almotabari3 Website is a national digital platform and one of my early projects created from scratch. It was developed using native PHP, HTML5, CSS3, and JavaScript. This website serves as a platform to facilitate and expedite the connection between those in need and blood donors. Additionally, it aims to promote and encourage blood donation culture, while also providing information about nearby blood transfusion centers and related resources.
+The Almotabari3 is one of my early projects created from scratch, It was developed using native PHP, HTML5, CSS3, and JavaScript. 
+
+The  Website is a national digital platform, serves  to facilitate and expedite the connection between those in need and blood donors. Additionally, it aims to promote and encourage blood donation culture, while also providing information about nearby blood transfusion centers and related resources.
 
 ## Technologies Used
 
