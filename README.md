@@ -1,20 +1,31 @@
-<center><h1> منصة المتبرع </h1></center>
-<center><h1> Almotabari3 Website </h1></center>
-<hr />
+# Almotabari3 Website
 
-<div>&nbsp;&nbsp;&nbsp;&nbsp;الموقع عبارة عن منصة رقمية وطنية تهذف أساسا الى تسهيل و تسريع عملية التعارف بين المحتاج و المتبرع , بالإضافة الى نشر و التشجيع على تقافة التبرع بالم و التعريف بمراكز تحاقن الدم القريبة...إلخ</div>
-<br>
+<img src="https://elmotabari3.000webhostapp.com/assest/_images/logo-donation.png" alt="Almotabari3 Website" height="300">
 
-<div>&nbsp;&nbsp;&nbsp;&nbsp;The site is a national digital platform that mainly aims to facilitate and speed up the acquaintance process between the needy and the donor, in addition to spreading and encouraging the culture of blood donation and introducing nearby blood transfusion centers...etc.</div>
-<br>
+## Overview
 
- لغات البرمجة: HTML5, CSS3, JAVASCRIPT, PHP, SQL(MySql)
- 
- Programming languages: HTML5, CSS3, JAVASCRIPT, SQL(MYSQL);
- Creation date: 14/11/2022 
- 
+The Almotabari3 Website is a national digital platform and one of my early projects created from scratch. It was developed using native PHP, HTML5, CSS3, and JavaScript. This website serves as a platform to facilitate and expedite the connection between those in need and blood donors. Additionally, it aims to promote and encourage blood donation culture, while also providing information about nearby blood transfusion centers and related resources.
 
-<div><h4>رابط الموقع: <a href='https://almotabari3.000webhostapp.com/' >Almotabari3.com</a></div>
+## Technologies Used
 
+- Native PHP
+- HTML5
+- CSS3
+- JavaScript
+- SQL (MySQL)
 
-BY ME: ayoub amazigh
+## Creation Date
+
+November 14, 2022
+
+## Live View
+
+You can explore the live version of the website here: [Almotabari3.com](https://elmotabari3.000webhostapp.com/)
+
+## Creator
+
+- Ayoub Amazigh
+
+---
+
+Feel free to customize this README by adding more sections or details as needed for your specific project.
