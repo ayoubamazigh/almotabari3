@@ -27,7 +27,3 @@ You can explore the live version of the website here: [Almotabari3.com](https://
 ## Creator
 
 - Ayoub Amazigh
-
----
-
-Feel free to customize this README by adding more sections or details as needed for your specific project.
