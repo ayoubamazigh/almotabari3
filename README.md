@@ -1,4 +1,4 @@
-# Almotabari3 Website (My Frist projct created from scratch)
+# Almotabari3 Website (projct created from scratch)
 
 <img src="https://elmotabari3.000webhostapp.com/assest/_images/logo-donation.png" alt="Almotabari3 Website" height="300">
 
