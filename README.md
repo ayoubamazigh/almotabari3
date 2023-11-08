@@ -1,4 +1,4 @@
-# Almotabari3 Website
+# Almotabari3 Website (My Frist projct created from scratch)
 
 <img src="https://elmotabari3.000webhostapp.com/assest/_images/logo-donation.png" alt="Almotabari3 Website" height="300">
 
@@ -22,7 +22,7 @@ November 14, 2022
 
 ## Live View
 
-You can explore the live version of the website here: [Almotabari3.com](https://elmotabari3.000webhostapp.com/)
+You can explore the live version of the website here: [Almotabari3.com](https://ayoubprojects.000webhostapp.com/Elmotabari3/)
 
 ## Creator
 
